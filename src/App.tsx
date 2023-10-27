@@ -1,11 +1,17 @@
-import React from "react";
-import logo from "./logo.svg";
-import "./App.css";
+import "./App.scss";
+import { BrowserRouter, Routes, Route, Navigate } from "react-router-dom";
+import { Auth } from "./components/Auth/Auth";
 
 function App() {
   return (
     <div className="App">
-      <h1>Blue Litmus App</h1>
+      <BrowserRouter>
+        <Routes>
+          <Route path="/sign-up" element={<Auth isSignInPage={false} />} />
+          <Route path="/sign-in" element={<Auth isSignInPage={true} />} />
+          <Route path="/" element={<Navigate to="/sign-in" />} />
+        </Routes>
+      </BrowserRouter>
     </div>
   );
 }
