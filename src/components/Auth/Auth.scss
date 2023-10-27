@@ -1,0 +1,42 @@
+@import "src/index";
+
+.auth-wrapper {
+  width: 500px;
+  margin: 350px auto;
+
+  .auth-form {
+    box-shadow: 0 0 5px gray;
+    padding: 1rem;
+
+    .form-group {
+      margin: 1rem auto;
+      .form-input {
+        border-radius: 0;
+      }
+    }
+    .auth-page-nav-text-wrap {
+      text-align: center;
+      font-weight: bold;
+      .auth-page-nav-text {
+        margin-top: 0.5rem;
+        padding-left: 0.11rem;
+        display: flex;
+        .auth-page-nav-link {
+          margin: 0 0.3rem;
+          text-decoration: none;
+        }
+      }
+    }
+    .submit-btn {
+      width: 100px;
+    }
+    .show-pass-btn {
+      background-color: transparent;
+      border: 1px solid #dee2e6;
+      color: initial;
+      :hover {
+        cursor: pointer;
+      }
+    }
+  }
+}
