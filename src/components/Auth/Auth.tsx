@@ -21,12 +21,6 @@ const Auth: React.FC<IAuth> = ({ isSignInPage = false }: IAuth) => {
     setPassword(event.target.value);
   };
 
-  useEffect(() => {
-    console.log("email", email);
-    console.log("showPass", showPassword);
-    console.log("pass", password);
-  }, [email, password, showPassword]);
-
   return (
     <div className="auth-wrapper">
       <Form className="auth-form">
